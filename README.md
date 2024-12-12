@@ -14,40 +14,7 @@ This is a comprehensive Learning Management System (LMS) built with Next.js, Exp
 - Node.js (v14 or later)
 - MongoDB
 - npm or yarn
-
-## Project Structure
-
-```bash
-lms-project/
-├── src/
-│ ├── app/
-│ │ ├── admin/
-│ │ │ ├── add-course/
-│ │ │ │ └── page.tsx
-│ │ │ └── page.tsx
-│ │ ├── courses/
-│ │ │ ├── [id]/
-│ │ │ │ └── page.tsx
-│ │ │ └── page.tsx
-│ │ ├── globals.css
-│ │ ├── layout.tsx
-│ │ └── page.tsx
-│ └── server/
-│ ├── middleware/
-│ │ └── auth.ts
-│ ├── models/
-│ │ ├── Course.ts
-│ │ └── User.ts
-│ ├── routes/
-│ │ ├── auth.ts
-│ │ └── courses.ts
-│ └── server.ts
-├── .env
-├── package.json
-├── README.md
-└── tsconfig.json
-```
-
+  
 ## Setup
 
 1. Clone the repository:
