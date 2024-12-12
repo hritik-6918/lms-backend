@@ -17,7 +17,7 @@ This is a comprehensive Learning Management System (LMS) built with Next.js, Exp
 
 ## Project Structure
 
-\`\`\`
+```bash
 lms-project/
 ├── src/
 │ ├── app/
@@ -46,36 +46,36 @@ lms-project/
 ├── package.json
 ├── README.md
 └── tsconfig.json
-\`\`\`
+```
 
 ## Setup
 
 1. Clone the repository:
-   \`\`\`
+   ```bash
    git clone https://github.com/yourusername/lms-project.git
    cd lms-project
-   \`\`\`
+   ```
 
 2. Install dependencies:
-   \`\`\`
+   ```bash
    npm install
-   \`\`\`
+   ```
 
 3. Create a \`.env\` file in the root directory with the following content:
-   \`\`\`
+   ```bash
    MONGODB_URI=your_mongodb_connection_string
    JWT_SECRET=your_jwt_secret
-   \`\`\`
+   ```
 
 4. Start the development server:
-   \`\`\`
+   ```bash
    npm run dev
-   \`\`\`
+   ```
 
 5. In a separate terminal, start the backend server:
-   \`\`\`
+   ```bash
    npm run server
-   \`\`\`
+   ```
 
 6. Open your browser and navigate to \`http://localhost:3000\`
 
@@ -98,25 +98,25 @@ This LMS uses JSON Web Tokens (JWT) for authentication. The \`auth\` middleware 
 
 ### User Schema
 
-\`\`\`typescript
+```typescript
 {
 username: { type: String, required: true, unique: true },
 password: { type: String, required: true },
 role: { type: String, enum: ['admin', 'user'], default: 'user' },
 enrolledCourses: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Course' }]
 }
-\`\`\`
+```
 
 ### Course Schema
 
-\`\`\`typescript
+```typescript
 {
 title: { type: String, required: true },
 description: { type: String, required: true },
 duration: { type: String, required: true },
 instructor: { type: String, required: true }
 }
-\`\`\`
+```
 
 ## Predefined Credentials
 
@@ -150,9 +150,3 @@ This project is licensed under the MIT License.
 - [Mongoose](https://mongoosejs.com/)
 - [JSON Web Tokens](https://jwt.io/)
 - [Tailwind CSS](https://tailwindcss.com/)
-
-## Contact
-
-Your Name - your.email@example.com
-
-Project Link: [https://github.com/yourusername/lms-project](https://github.com/yourusername/lms-project)
